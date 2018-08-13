@@ -1,37 +1,32 @@
-# Contributing to Pro Git (2nd Edition)
+# คำแนะนำในการพัฒนาหนังสือ Pro Git (ฉบับที่ 2)
 
 
-## Licensing
+## การอนุญาตและลิขสิทธิ์
 
-By opening a pull request to this repository, you agree to provide your work under the [project license](LICENSE.asc).
-Also, you agree to grant such license of your work as is required for the purposes of future print editions to @ben and @schacon.
-Should your changes appear in a printed edition, you'll be included in the [contributors list](book/contributors.asc).
+เมื่อคุณแปลเนื้อหาในหนังสือและส่งเพื่อให้เราแก้ไขโดยการร้องขอให้เปลี่ยนแปลง (pull request) แล้ว เราจะถือว่าคุณได้ยอมรับให้ผลงานแปลเนื้อหาของคุณอยู่ภายใต้[สัญญาอนุญาต](LICENSE.asc)ของเรา
 
-## Small Corrections
+นอกจากนี้คุณยังอนุญาตให้ @ben และ @schacon นำผลงานของคุณไปใช้ในหนังสือฉบับต่อไปในอนาคตด้วยสัญญาอนุญาตแบบเดียวกัน โดยเราจะเพิ่มชื่อของคุณใน[รายชื่อผู้พัฒนา](book/contributors.asc)หากผลงานของคุณถูกใช้ในหนังสือของเรา
 
-Errata and basic clarifications will be accepted if we agree that they improve the content. You can also open an issue so we can figure out how or if it needs to be addressed.
+## การแก้ไขจุดผิดเล็กน้อย
 
-If you've never done this before, the [flow guide](https://guides.github.com/introduction/flow/) might be useful.
+คุณสามารถสร้าง issue หากพบข้อผิดพลาดภายในเนื้อหาหรือข้อความในหนังสือที่คลุมเครือหรือไม่ชัดเจน โดยแจ้งให้ทราบถึงข้อผิดพลาดหรือคำแนะนำในการแก้ไข หรือร่วมแก้ไขข้อผิดพลาดและปรับปรุงเนื้อหาให้ง่ายต่อความเข้าใจ
 
-## Large Rewrites
+การแก้ไขจะได้รับการอนุมัติหากได้รับการพิจารณาแล้วว่าเนื้อหาที่แก้ไขนั้นช่วยปรับปรุงเนื้อหาภายในหนังสือของเราให้ดีขึ้น
 
-Open an issue for discussion before you start. These changes tend to be very subjective, often only clarifying things for some small percentage of people and it's rarely worth the time to accept them. Professional copy editors have already reviewed this content multiple times so while you may have somewhat better taste and grammar than we do it's unlikely that your prose is going to be *so* much better that it's worth changing vast swaths of text.
+หากคุณไม่คุ้นเคยวิธีการแก้ไข สามารถอ่าน [flow guide (เนื้อหาเป็นภาษาอังกฤษ)](https://guides.github.com/introduction/flow/) เพื่อทำความเข้าใจขั้นตอนวิธีแบบคร่าว ๆ ได้
 
-## Figures
+## การเขียนหรือเรียบเรียงเนื้อหาใหม่
 
-The images in this book were generated using [Sketch 3](http://bohemiancoding.com/sketch/), with the [included sketchbook file](diagram-source/progit.sketch).
+ส่วนใหญ่แล้วการเรียบเรียงเนื้อหาใหม่มักจะขึ้นกับรูปแบบการพิมพ์ของแต่ละบุคคล อนึ่ง เนื้อหาในหนังสือของเราได้รับการตรวจทานจากบรรณาธิการหลายครั้งแล้ว ดังนั้นจึงอยากให้คุณสร้าง issue ขึ้นมาเพื่อพูดคุยและตกลงสิ่งที่จะแก้ไขก่อนจะเริ่มทำจริง
 
-To add a figure:
+เราอยากให้เนื้อหาที่แก้ไขนั้นทำให้หนังสือของเราน่าอ่านและเข้าใจมากยิ่งขึ้น มากกว่าที่จะแก้ไขเรื่องที่อาจจะไม่คุ้มกับเวลาที่เสียไปกับการตรวจทานเนื้อหาที่ถูกแก้เป็นจำนวนมาก
 
-1. Add a page to the sketchbook. Try to use the included symbols wherever possible.
-1. Add a "slice" to your page. Give it a name that matches the destination PNG filename, relative from the root of the source directory.
-1. Make sure your slice is set to export at "800w".
+## รูปภาพ
 
+รูปภาพในหนังสือเล่มนี้สร้างจาก[ไฟล์ sketchbook](diagram-source/progit.sketch) ที่แนบมาใน repository ด้วยโปรแกรม [Sketch 3](http://bohemiancoding.com/sketch/)
 
-## Translations
+คุณสามารถเพิ่มรูปในหนังสือได้ดังนี้
 
-Translations to other languages are highly encouraged but handled a little differently than the first edition. We now keep each translation in a separate repository and automatically build the output files through Atlas. This was something that was really difficult in the last edition.
-
-Since each translation is a different repository, we can also have different maintainers for each project. The Pro Git team simply pulls them in and builds them for the translation teams. To get automatic builds, translations repositories will have to be under the [`progit` organization on GitHub](https://github.com/progit).
-
-You can find out information on all the current translations and information on how to start your own at http://progit.org/translations.
+1. สร้างหน้าใหม่ใน sketchbook และพยายามใช้ symbol ที่มี sketchbook ให้มากที่สุดเท่าที่จะเป็นไปได้
+1. เพิ่ม "slice" ภายในหน้าใหม่ที่สร้างขึ้น ตั้งชื่อ slice ให้ตรงกับชื่อของไฟล์ PNG ปลายทางโดยเริ่มจาก root ของ source directory
+1. ขอให้มั่นใจว่า slice ได้ตั้งให้ export ด้วยความกว้าง 800px
